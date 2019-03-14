@@ -1,0 +1,70 @@
+﻿body {
+}
+
+.Header {
+    top: 0px;
+    left: 0px;
+    bottom:0px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 800px;
+    background-image: url(../../Images/logo.JPG);
+    background-repeat:repeat-x;
+}
+
+.Menu {
+    
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.Content {
+    top: auto;
+    left: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 800px;
+}
+.copyright {
+    top: auto;
+    left: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 785px;
+    padding: 5px 5px 5px 5px;
+    margin-top: 5px;
+    border: 3px solid green;
+}
+.Slider {
+    border: 3px solid green;
+    float: left;
+    width: 45.85%;
+    margin-right: 5px;
+    height:271px;
+    padding: 2px 2px 2px 2px;
+    margin-bottom: 5px;
+    position: relative;
+    overflow: auto;
+}
+.Login {
+    border: 3px solid green;
+    position: relative;
+    padding: 5px 5px 5px 5px;
+    height: 265px;
+    margin-bottom: 5px;
+    width: 50%;
+    overflow: auto;
+}
+.registration {
+    top: auto;
+    left: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 800px;
+}
