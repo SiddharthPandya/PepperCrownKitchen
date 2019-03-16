@@ -72,17 +72,6 @@ namespace PepperCrownKitchen
             Response.Redirect("ForgetPassword.aspx");
         }
 
-        protected void Page_PreInit(object sender, EventArgs e)
-        {
-            
-            string SelectTheme = Session["Theme"] as string;
-            if (SelectTheme == null)
-            {
-                SelectTheme = "Dark";
-            }
-            Page.Theme = SelectTheme;
-        }
-
         protected void btnEmpLogin_Click(object sender, EventArgs e)
         {
             string constring = ConfigurationManager.ConnectionStrings["PepperCrownKitchen"].ConnectionString;

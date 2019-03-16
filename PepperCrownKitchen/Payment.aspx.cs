@@ -14,19 +14,5 @@ namespace PepperCrownKitchen
 
         }
 
-        protected void Page_PreInit(object sender, EventArgs e)
-        {
-            string SelectTheme = Session["Theme"] as string;
-            if (SelectTheme == null)
-            {
-                SelectTheme = "Dark";
-            }
-            Page.Theme = SelectTheme;
-        }
-
-        protected void btnSubmitPayment_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("OrderConfirm.aspx");
-        }
     }
 }

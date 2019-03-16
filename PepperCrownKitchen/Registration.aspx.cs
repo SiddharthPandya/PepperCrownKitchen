@@ -55,16 +55,6 @@ namespace PepperCrownKitchen
             Response.Redirect("Home.aspx");
         }
 
-        protected void Page_PreInit(object sender, EventArgs e)
-        {
-            //FormsAuthentication.SignOut();
-            string SelectTheme = Session["Theme"] as string;
-            if (SelectTheme == null)
-            {
-                SelectTheme = "Dark";
-            }
-            Page.Theme = SelectTheme;
-        }
 
     }
 }
