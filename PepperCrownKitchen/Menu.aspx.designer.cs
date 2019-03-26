@@ -11,5 +11,41 @@ namespace PepperCrownKitchen {
     
     
     public partial class Menu {
+        
+        /// <summary>
+        /// AppetizerGridView control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView AppetizerGridView;
+        
+        /// <summary>
+        /// DrinksGridView control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView DrinksGridView;
+        
+        /// <summary>
+        /// MainCourseGridView control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView MainCourseGridView;
+        
+        /// <summary>
+        /// DessertGridView control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView DessertGridView;
     }
 }
