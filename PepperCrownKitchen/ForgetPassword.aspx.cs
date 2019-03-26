@@ -21,6 +21,16 @@ namespace PepperCrownKitchen
             FormsAuthentication.SignOut();
         }
 
+        protected void Page_PreInit(object sender, EventArgs e)
+        {
+            string SelectTheme = Session["Theme"] as string;
+            if (SelectTheme == null)
+            {
+                SelectTheme = "Dark";
+            }
+            Page.Theme = SelectTheme;
+        }
+
         protected void ButPwd_Click(object sender, EventArgs e)
         {
             string mainconn = "Data Source=PALAK\\SQLEXPRESS;Initial Catalog=PepperCrownKitchen;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
