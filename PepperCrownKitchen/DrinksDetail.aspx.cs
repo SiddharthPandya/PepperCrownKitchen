@@ -14,7 +14,27 @@ namespace PepperCrownKitchen
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            if (!IsPostBack)
+            {
+                BindList();
+            }
+        }
+
+        private void BindList()
+        {
+            string DrinksId = Request.QueryString["Drinks_ID"];
+            string connectionString = ConfigurationManager.ConnectionStrings["PepperCrownKitchen"].ConnectionString;
+            DataSet ds = new DataSet();
+            SqlConnection conn = new SqlConnection(connectionString);
+            SqlDataAdapter adapter = new SqlDataAdapter("select * from Drinks where Drinks_ID = @Drinks_ID", conn);
+            adapter.SelectCommand.Parameters.Add("@Drinks_ID", SqlDbType.Int);
+            adapter.SelectCommand.Parameters["@Drinks_ID"].Value = DrinksId;
+
+            adapter.Fill(ds, "Drinks");
+
+            DrinksDetailsView.DataSource = ds;
+
+            DrinksDetailsView.DataBind();
         }
 
         protected void Page_PreInit(object sender, EventArgs e)
