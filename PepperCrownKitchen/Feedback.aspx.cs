@@ -24,5 +24,10 @@ namespace PepperCrownKitchen
             Page.Theme = SelectTheme;
         }
 
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("FeedbackResult.aspx");
+        }
+
     }
 }
