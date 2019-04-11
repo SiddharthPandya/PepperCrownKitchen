@@ -14,6 +14,11 @@ namespace PepperCrownKitchen
 
         }
 
+        protected void btnSubmitPayment_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("OrderConfirm.aspx");
+        }
+
         protected void Page_PreInit(object sender, EventArgs e)
         {
             string SelectTheme = Session["Theme"] as string;
