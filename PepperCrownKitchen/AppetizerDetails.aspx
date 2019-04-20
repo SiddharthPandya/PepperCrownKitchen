@@ -2,6 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div class="jumbotron">
     <h2>Appetizer Details</h2>
     <asp:DetailsView ID="AppetizerDetailsView" runat="server" Height="50px" Width="522px" AutoGenerateRows="False" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4">
         <EditRowStyle BackColor="#009999" Font-Bold="True" ForeColor="#CCFF99" />
@@ -38,4 +39,5 @@
         <PagerStyle BackColor="#99CCCC" ForeColor="#003399" HorizontalAlign="Left" />
         <RowStyle BackColor="White" ForeColor="#003399" />
     </asp:DetailsView>
+        </div>
 </asp:Content>

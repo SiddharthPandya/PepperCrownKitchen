@@ -2,16 +2,16 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div class="jumbotron">
     <h2>Search Food Items</h2>
     Type: <asp:DropDownList ID="ddlFoodItem" runat="server">
         <asp:ListItem Selected="True">Appetizer</asp:ListItem>
         <asp:ListItem>Drinks</asp:ListItem>
         <asp:ListItem Value="MainCourse">Main Course</asp:ListItem>
         <asp:ListItem>Dessert</asp:ListItem>
-    </asp:DropDownList>
-    <br />
-    <br />
-    <asp:Button ID="searchSubmit" runat="server" Text="Submit" OnClick="searchSubmit_Click" />
+    </asp:DropDownList> &nbsp; &nbsp &nbsp;
+    
+    <asp:Button ID="searchSubmit" CssClass="btn-primary" runat="server" Text="Submit" OnClick="searchSubmit_Click" />
     <br />
     <br />
     Chef:<asp:DropDownList ID="ddlChef" runat="server">
@@ -19,10 +19,9 @@
         <asp:ListItem>Lovejot</asp:ListItem>
         <asp:ListItem>Jasdeep</asp:ListItem>
         <asp:ListItem>Dhruti</asp:ListItem>
-    </asp:DropDownList>
-    <br />
-    <br />
-    <asp:Button ID="searchChef" runat="server" Text="Submit" OnClick="searchChef_Click" />
+    </asp:DropDownList> &nbsp; &nbsp &nbsp;
+    
+    <asp:Button ID="searchChef" CssClass="btn-primary" runat="server" Text="Submit" OnClick="searchChef_Click" />
     <br />
     <br />
     <asp:GridView ID="searchGridView" runat="server" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellPadding="3" CellSpacing="2">
@@ -36,4 +35,5 @@
         <SortedDescendingCellStyle BackColor="#F1E5CE" />
         <SortedDescendingHeaderStyle BackColor="#93451F" />
     </asp:GridView>
+        </div>
 </asp:Content>

@@ -2,7 +2,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h2>Appetizers</h2>
+    <div class="jumbotron">
+    <h2 style="margin-left:auto; margin-right:auto;">Appetizers</h2>
     <asp:GridView ID="AppetizerGridView" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#000066" BorderStyle="Solid" BorderWidth="2px" CellPadding="3" CellSpacing="1" GridLines="None" Width="550px">
         <Columns>
             <asp:HyperLinkField DataNavigateUrlFields="Appetizer_ID" DataNavigateUrlFormatString="AppetizerDetails.aspx?Appetizer_ID={0}" DataTextField="Name" HeaderText="Food Item" >
@@ -97,5 +98,6 @@
         <SortedDescendingCellStyle BackColor="#CAC9C9" />
         <SortedDescendingHeaderStyle BackColor="#383838" />
     </asp:GridView>
+        </div>
 </asp:Content>
 

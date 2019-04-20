@@ -2,6 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div class="jumbotron">
     <h2>Payment Details</h2><br />
     <asp:Table ID="Table1" runat="server">
         <asp:TableRow>
@@ -37,11 +38,12 @@
         </asp:TableRow>
        <asp:TableRow>
            <asp:TableCell>
-               <asp:Button ID="btnSubmitPayment" runat="server" OnClick="btnSubmitPayment_Click" Text="Place Order" />
+               <asp:Button ID="btnSubmitPayment" runat="server" CssClass="btn btn-success" OnClick="btnSubmitPayment_Click" Text="Place Order" />
            </asp:TableCell>
            <asp:TableCell>
-               <input id="btnReset" type="reset" value="Reset" />
+               <input id="btnReset" type="reset" class="btn btn-warning" value="Reset" />
            </asp:TableCell>
        </asp:TableRow>
     </asp:Table>
+        </div>
 </asp:Content>

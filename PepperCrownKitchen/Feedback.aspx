@@ -2,8 +2,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h2>Feedback Form</h2>    
-
+    <div class="jumbotron">
+    <h2 style="margin-left:325px;">Feedback Form</h2><br />   
+        <div style="margin-left:75px; margin-right:auto;">
     <asp:Table ID="Table1" runat="server" Width="700px" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px">
         <%--<asp:TableHeaderRow>
             <asp:TableHeaderCell Height="50px" HorizontalAlign="Right">
@@ -159,12 +160,13 @@
         </asp:TableRow>
         <asp:TableRow>
             <asp:TableCell BorderColor="Black" BorderStyle="Dashed" BorderWidth="1px" HorizontalAlign="Center">
-                <asp:Button ID="Button1" runat="server" Text="Submit" OnClick="Button1_Click" />
+                <asp:Button ID="Button1" runat="server" CssClass="btn-success" Text="Submit" OnClick="Button1_Click" />
             </asp:TableCell>
             <asp:TableCell BorderColor="Black" BorderStyle="Dashed" BorderWidth="1px" HorizontalAlign="Center">
-                <input id="Reset1" type="reset" value="Reset" />
+                <input id="Reset1" type="reset" class="btn-warning" value="Reset" />
             </asp:TableCell>
         </asp:TableRow>
     </asp:Table>
-
+            </div>
+        </div>
 </asp:Content>

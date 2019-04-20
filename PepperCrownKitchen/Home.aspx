@@ -2,5 +2,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h1>Welcome To Pepper Crown Kitchen</h1>
+    <div class="jumbotron">
+  <h1 class="display-4">Welcome To Pepper Crown Kitchen</h1>
+  <a class="btn btn-primary btn-lg" href="/AboutUs.aspx" role="button">About Us</a>
+</div>
 </asp:Content>

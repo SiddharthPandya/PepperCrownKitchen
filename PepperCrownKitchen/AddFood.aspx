@@ -109,7 +109,7 @@
     </asp:GridView>
     <br />
     <br />
-    <asp:Button ID="nextButton" runat="server" Text="Next" OnClick="nextButton_Click" />
+    <asp:Button ID="nextButton" runat="server" Text="Next" CssClass="btn btn-success" OnClick="nextButton_Click" />
     </asp:Content>
 
 

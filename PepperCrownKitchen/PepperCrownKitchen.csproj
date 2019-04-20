@@ -82,6 +82,9 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="EmployeeSide.aspx" />
     <Content Include="FeedbackResult.aspx" />
+    <Content Include="Images\facebook.png" />
+    <Content Include="Images\Instagram.png" />
+    <Content Include="Images\twitter.jpg" />
     <Content Include="OrderConfirm.aspx" />
     <Content Include="Payment.aspx" />
     <Content Include="PersonalInfo.aspx" />
